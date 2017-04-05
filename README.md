@@ -1,0 +1,121 @@
+# api documentation for  [a11y (v0.5.0)](https://github.com/addyosmani/a11y#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-a11y.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-a11y) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-a11y.svg)](https://travis-ci.org/npmdoc/node-npmdoc-a11y)
+#### Runs an accessibility audit against a URL
+
+[![NPM](https://nodei.co/npm/a11y.png?downloads=true)](https://www.npmjs.com/package/a11y)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-a11y/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-a11y_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-a11y/build/apidoc.html)
+
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-a11y/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-a11y/build/screenCapture.npmPackageDependencyTree.svg)
+
+
+
+# package.json
+
+```json
+
+{
+    "bin": {
+        "a11y": "cli.js"
+    },
+    "bugs": {
+        "url": "https://github.com/addyosmani/a11y/issues"
+    },
+    "dependencies": {
+        "accessibility-developer-tools": "^2.6.0",
+        "chalk": "^1.0.0",
+        "each-async": "^1.1.0",
+        "globby": "^6.1.0",
+        "humanize-url": "^1.0.0",
+        "indent-string": "^3.1.0",
+        "log-symbols": "^1.0.1",
+        "meow": "^3.3.0",
+        "parse-json": "^2.1.0",
+        "phantomjs-polyfill": "0.0.2",
+        "phantomjs-prebuilt": "^2.1.12",
+        "protocolify": "^2.0.0",
+        "update-notifier": "^2.0.0"
+    },
+    "description": "Runs an accessibility audit against a URL",
+    "devDependencies": {
+        "ava": "^0.18.0",
+        "xo": "^0.17.0"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "450320380094baa64093b953f3937239c150fd68",
+        "tarball": "https://registry.npmjs.org/a11y/-/a11y-0.5.0.tgz"
+    },
+    "engines": {
+        "node": ">=4"
+    },
+    "files": [
+        "index.js",
+        "cli.js",
+        "audits.js"
+    ],
+    "gitHead": "1d13eef6c0abd60ce896b87b897f7b008922a4b3",
+    "homepage": "https://github.com/addyosmani/a11y#readme",
+    "keywords": [
+        "cli-app",
+        "cli",
+        "a11y",
+        "audit",
+        "test",
+        "accessibility",
+        "wai",
+        "aria",
+        "dev",
+        "developer",
+        "tool",
+        "report",
+        "web",
+        "website"
+    ],
+    "license": "Apache-2.0",
+    "maintainers": [
+        {
+            "name": "addyosmani",
+            "email": "addyosmani@gmail.com"
+        },
+        {
+            "name": "sindresorhus",
+            "email": "sindresorhus@gmail.com"
+        }
+    ],
+    "name": "a11y",
+    "optionalDependencies": {},
+    "readme": "ERROR: No README data found!",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/addyosmani/a11y.git"
+    },
+    "scripts": {
+        "demo": "./cli.js theverge.com",
+        "test": "xo && ava test/test.js"
+    },
+    "version": "0.5.0",
+    "xo": {
+        "space": 4,
+        "ignores": [
+            "audits.js"
+        ]
+    }
+}
+```
+
+
+
+# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
+
+#### [module a11y](#apidoc.module.a11y)
+
+
+
+# <a name="apidoc.module.a11y"></a>[module a11y](#apidoc.module.a11y)
+
+
+
+# misc
+- this document was created with [utility2](https://github.com/kaizhu256/node-utility2)
