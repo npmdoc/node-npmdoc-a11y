@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/addyosmani/a11y#readme"
-
-    >a11y (v0.5.0)</a>
+    <a href="https://github.com/addyosmani/a11y#readme">a11y (v0.5.0)</a>
 </h1>
 <h4>Runs an accessibility audit against a URL</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.a11y">module a11y</a><ol>
 
@@ -107,23 +100,23 @@
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">(url, opts, cb) =&#x3e; {
-    if (typeof opts !== &#x27;object&#x27;) {
+    <li>description and source-code<pre class="apidocCodePre">(url, opts, cb) =&gt; {
+    if (typeof opts !== 'object') {
         cb = opts;
         opts = {};
     }
 
     opts = opts || {};
 
-    if (typeof cb !== &#x27;function&#x27;) {
-        throw new TypeError(&#x27;Callback required&#x27;);
+    if (typeof cb !== 'function') {
+        throw new TypeError('Callback required');
     }
 
-    if (!(url &#x26;&#x26; url.length &#x3e; 0)) {
-        throw new Error(&#x27;Specify at least one URL&#x27;);
+    if (!(url &amp;&amp; url.length &gt; 0)) {
+        throw new Error('Specify at least one URL');
     }
 
-    const viewportSize = (opts.viewportSize || &#x27;&#x27;).split(&#x27;x&#x27;);
+    const viewportSize = (opts.viewportSize || '').split('x');
     delete opts.viewportSize;
 
     opts = Object.assign({delay: 1}, opts, {
@@ -133,12 +126,12 @@
     });
 
     execFile(phantomjs.path, [
-        path.join(__dirname, &#x27;audits.js&#x27;),
+        path.join(__dirname, 'audits.js'),
         JSON.stringify(opts),
-        &#x27;--ignore-ssl-errors=true&#x27;,
-        &#x27;--ssl-protocol=tlsv1&#x27;,
-        &#x27;--local-to-remote-url-access=true&#x27;
-    ], (err, stdout) =&#x3e; {
+        '--ignore-ssl-errors=true',
+        '--ssl-protocol=tlsv1',
+        '--local-to-remote-url-access=true'
+    ], (err, stdout) =&gt; {
         if (err) {
             cb(err);
             return;
@@ -192,3 +185,4 @@
     ]
 </div>
 </div>
+</body></html>

@@ -61,12 +61,128 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.a11y">module a11y</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.a11y.a11y">
+            function <span class="apidocSignatureSpan"></span>a11y
+            <span class="apidocSignatureSpan">(url, opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.a11y.toString">
+            function <span class="apidocSignatureSpan">a11y.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.a11y.toString">module a11y.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.a11y.toString.toString">
+            function <span class="apidocSignatureSpan">a11y.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.a11y" id="apidoc.module.a11y">module a11y</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.a11y.a11y" id="apidoc.element.a11y.a11y">
+        function <span class="apidocSignatureSpan"></span>a11y
+        <span class="apidocSignatureSpan">(url, opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">(url, opts, cb) =&#x3e; {
+    if (typeof opts !== &#x27;object&#x27;) {
+        cb = opts;
+        opts = {};
+    }
+
+    opts = opts || {};
+
+    if (typeof cb !== &#x27;function&#x27;) {
+        throw new TypeError(&#x27;Callback required&#x27;);
+    }
+
+    if (!(url &#x26;&#x26; url.length &#x3e; 0)) {
+        throw new Error(&#x27;Specify at least one URL&#x27;);
+    }
+
+    const viewportSize = (opts.viewportSize || &#x27;&#x27;).split(&#x27;x&#x27;);
+    delete opts.viewportSize;
+
+    opts = Object.assign({delay: 1}, opts, {
+        url: protocolify(url),
+        width: viewportSize[0] || 1024,
+        height: viewportSize[1] || 768
+    });
+
+    execFile(phantomjs.path, [
+        path.join(__dirname, &#x27;audits.js&#x27;),
+        JSON.stringify(opts),
+        &#x27;--ignore-ssl-errors=true&#x27;,
+        &#x27;--ssl-protocol=tlsv1&#x27;,
+        &#x27;--local-to-remote-url-access=true&#x27;
+    ], (err, stdout) =&#x3e; {
+        if (err) {
+            cb(err);
+            return;
+        }
+
+        cb(null, parseJson(stdout));
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.a11y.toString" id="apidoc.element.a11y.toString">
+        function <span class="apidocSignatureSpan">a11y.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.a11y.toString" id="apidoc.module.a11y.toString">module a11y.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.a11y.toString.toString" id="apidoc.element.a11y.toString.toString">
+        function <span class="apidocSignatureSpan">a11y.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
