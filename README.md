@@ -1,9 +1,14 @@
-# api documentation for  [a11y (v0.5.0)](https://github.com/addyosmani/a11y#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-a11y.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-a11y) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-a11y.svg)](https://travis-ci.org/npmdoc/node-npmdoc-a11y)
+# npmdoc-a11y
+
+#### api documentation for  [a11y (v0.5.0)](https://github.com/addyosmani/a11y#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-a11y.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-a11y) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-a11y.svg)](https://travis-ci.org/npmdoc/node-npmdoc-a11y)
+
 #### Runs an accessibility audit against a URL
 
-[![NPM](https://nodei.co/npm/a11y.png?downloads=true)](https://www.npmjs.com/package/a11y)
+[![NPM](https://nodei.co/npm/a11y.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/a11y)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-a11y/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-a11y_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-a11y/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-a11y/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-a11y/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-a11y/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-a11y/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-a11y/build/screenCapture.npmPackageListing.svg)
 
@@ -76,17 +81,14 @@
     "license": "Apache-2.0",
     "maintainers": [
         {
-            "name": "addyosmani",
-            "email": "addyosmani@gmail.com"
+            "name": "addyosmani"
         },
         {
-            "name": "sindresorhus",
-            "email": "sindresorhus@gmail.com"
+            "name": "sindresorhus"
         }
     ],
     "name": "a11y",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/addyosmani/a11y.git"
@@ -104,16 +106,6 @@
     }
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module a11y](#apidoc.module.a11y)
-
-
-
-# <a name="apidoc.module.a11y"></a>[module a11y](#apidoc.module.a11y)
 
 
 
