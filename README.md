@@ -1,6 +1,6 @@
 # npmdoc-a11y
 
-#### api documentation for  [a11y (v0.5.0)](https://github.com/addyosmani/a11y#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-a11y.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-a11y) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-a11y.svg)](https://travis-ci.org/npmdoc/node-npmdoc-a11y)
+#### basic api documentation for  [a11y (v0.5.0)](https://github.com/addyosmani/a11y#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-a11y.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-a11y) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-a11y.svg)](https://travis-ci.org/npmdoc/node-npmdoc-a11y)
 
 #### Runs an accessibility audit against a URL
 
